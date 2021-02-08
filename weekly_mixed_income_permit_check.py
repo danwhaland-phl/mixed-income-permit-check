@@ -4,7 +4,7 @@ import geopandas as gpd
 from datetime import datetime
 
 # file paths and variables
-todays_date = datetime.today().strftime('%d-%m-%y')
+todays_date = datetime.today().strftime('%m-%d-%y')
 project_tracker_onedrive = os.environ.get('ProjectTrackerOneDrive')
 project_tracker_input = project_tracker_onedrive + '/Project Tracker.xlsx'
 project_tracker_output = project_tracker_onedrive + '/Project Tracker Permits/Project Tracker Permits - Week of ' + todays_date + '.xlsx'
